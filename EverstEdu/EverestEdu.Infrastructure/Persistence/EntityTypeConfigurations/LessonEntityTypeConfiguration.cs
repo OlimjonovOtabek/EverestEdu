@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace EverestEdu.Infrastructure.EntityTypeConfigurations
+namespace EverestEdu.Infrastructure.Persistence.EntityTypeConfigurations
 {
     public class LessonEntityTypeConfiguration : IEntityTypeConfiguration<Lesson>
     {
