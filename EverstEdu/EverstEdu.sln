@@ -5,6 +5,10 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EverstEdu.Api", "EverstEdu.Api\EverstEdu.Api.csproj", "{5A699ED9-B249-4CC7-8122-70E44DF2875D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EverestEdu.Domain", "EverestEdu.Domain\EverestEdu.Domain.csproj", "{3E5B43D2-0465-485F-AB40-4A5CB3DB9EE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EverestEdu.Infrastructure", "EverestEdu.Infrastructure\EverestEdu.Infrastructure.csproj", "{48D3A3D0-6F26-41AB-A4A1-1E6A1C15C7C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{5A699ED9-B249-4CC7-8122-70E44DF2875D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A699ED9-B249-4CC7-8122-70E44DF2875D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A699ED9-B249-4CC7-8122-70E44DF2875D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E5B43D2-0465-485F-AB40-4A5CB3DB9EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E5B43D2-0465-485F-AB40-4A5CB3DB9EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E5B43D2-0465-485F-AB40-4A5CB3DB9EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E5B43D2-0465-485F-AB40-4A5CB3DB9EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48D3A3D0-6F26-41AB-A4A1-1E6A1C15C7C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48D3A3D0-6F26-41AB-A4A1-1E6A1C15C7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48D3A3D0-6F26-41AB-A4A1-1E6A1C15C7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48D3A3D0-6F26-41AB-A4A1-1E6A1C15C7C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
