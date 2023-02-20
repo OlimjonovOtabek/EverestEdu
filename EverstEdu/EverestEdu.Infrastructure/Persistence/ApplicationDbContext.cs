@@ -1,6 +1,5 @@
 ﻿using EverestEdu.Domain.Entities;
-using EverestEdu.Infrastructure.EntityTypeConfigurations;
-using EverestEdu.Infrastructure.IEntityTypeConfigurations;
+using EverestEdu.Infrastructure.Persistence.EntityTypeConfigurations;
 using Microsoft.EntityFrameworkCore;
 
 namespace EverestEdu.Infrastructure.Persistence
