@@ -3,6 +3,7 @@ using System;
 using EverestEdu.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace EverestEdu.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230220104830_Addmin verified")]
+    partial class Addminverified
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -191,9 +194,9 @@ namespace EverestEdu.Infrastructure.Migrations
                         {
                             Id = 1,
                             FullName = "Adminbek Adminov",
-                            PasswordHash = "0ECB2816A2503040F688FBCA733C",
+                            PasswordHash = "0ECB2816A2503040F688FBCA733C728003EF613A0B7803DC1ACE1A01408630E0E9A52F18968A1F0B6D388950ABAD951685C934C4977251AED1F336650346C1E8",
                             Role = 1,
-                            UserName = "Adminn"
+                            UserName = "Admin"
                         });
                 });
 
