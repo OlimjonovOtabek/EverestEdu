@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EverestEdu.Domain\EverestEdu.Domain.csproj" />
+    <ProjectReference Include="..\EverestEduApplication\EverestEduApplication.csproj" />
   </ItemGroup>
 
 </Project>

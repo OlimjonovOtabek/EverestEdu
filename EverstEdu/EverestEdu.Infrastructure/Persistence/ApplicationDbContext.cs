@@ -1,10 +1,11 @@
 ﻿using EverestEdu.Domain.Entities;
 using EverestEdu.Infrastructure.Persistence.EntityTypeConfigurations;
+using EverestEduApplication.Abstractions;
 using Microsoft.EntityFrameworkCore;
 
 namespace EverestEdu.Infrastructure.Persistence
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : DbContext, IApplicationDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -12,6 +13,7 @@ namespace EverestEdu.Infrastructure.Persistence
         }
         public DbSet<User> Users { get; set; }
         public DbSet<Student> Students { get; set; }
+
         public DbSet<Group> Groups { get; set; }
         public DbSet<StudentGroup> StudentGroups { get; set; }
         public DbSet<Lesson> Lessons { get; set; }

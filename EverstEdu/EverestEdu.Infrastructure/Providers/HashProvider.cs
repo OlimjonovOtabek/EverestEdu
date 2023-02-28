@@ -1,11 +1,12 @@
-﻿using System.Security.Cryptography;
+﻿using EverestEduApplication.Abstractions;
+using System.Security.Cryptography;
 using System.Text;
 
-namespace EverestEdu.Infrastructure.Utils
+namespace EverestEdu.Infrastructure.Providers
 {
-    public class HashGenerater
+    public class HashProvider : IHashProvider
     {
-        public static string Generate(string password)
+        public string GetHash(string value)
         {
             const int keySize = 14;
             const int iterations = 35000;
@@ -13,7 +14,7 @@ namespace EverestEdu.Infrastructure.Utils
             HashAlgorithmName hashAlgorithm = HashAlgorithmName.SHA256;
 
             var hash = Rfc2898DeriveBytes.Pbkdf2(
-                Encoding.UTF8.GetBytes(password),
+                Encoding.UTF8.GetBytes(value),
                 new byte[0],
                 iterations,
                 hashAlgorithm,
