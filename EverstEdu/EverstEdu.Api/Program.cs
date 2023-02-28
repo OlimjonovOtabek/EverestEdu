@@ -1,4 +1,5 @@
 using EverestEdu.Infrastructure;
+using EverestEduApplication;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddApplication();
 
 
 builder.Services.AddControllers();

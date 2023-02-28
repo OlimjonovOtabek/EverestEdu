@@ -1,7 +1,9 @@
 ﻿using EverestEdu.Domain.Enums;
 using EverestEdu.Infrastructure.Abstractions;
 using EverestEdu.Infrastructure.Persistence;
+using EverestEdu.Infrastructure.Providers;
 using EverestEdu.Infrastructure.Services;
+using EverestEduApplication.Abstractions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -19,8 +21,10 @@ namespace EverestEdu.Infrastructure
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
             services.AddScoped<ITokenService, JWTService>();
             services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IHashProvider, HashProvider>();
 
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
