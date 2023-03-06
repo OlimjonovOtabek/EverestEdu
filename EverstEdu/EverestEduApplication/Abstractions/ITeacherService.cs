@@ -2,12 +2,7 @@
 
 namespace EverestEduApplication.Abstractions
 {
-    public interface ITeacherService
+    public interface ITeacherService : ICrudService<int, TeacherViewModel, CreateTeacherModel, UpdateTeacherModel>
     {
-        Task<TeacherViewModel> GetByIdAsync(int id);
-        Task<List<TeacherViewModel>> GetAllAsync();
-        Task CreateAsync(CreateTeacherModel Model);
-        Task UpdateAsync(UpdateTeacherModel model);
-        Task DeleteAsync(int id);
     }
 }

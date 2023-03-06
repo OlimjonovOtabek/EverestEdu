@@ -6,9 +6,9 @@ namespace EverestEduApplication.Models
     {
 
         [Required]
-        public string FullName { get; set; }
+        public string? FullName { get; set; }
         public DateTime BirthDate { get; set; }
         [Required]
-        public string PhoneNumber { get; set; }
+        public string? PhoneNumber { get; set; }
     }
 }

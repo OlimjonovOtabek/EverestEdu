@@ -12,10 +12,7 @@ namespace EverestEdu.Infrastructure.Persistence.EntityTypeConfigurations
             builder.HasKey(x => x.Id);
 
             builder.Property(p => p.FullName)
-                .HasMaxLength(30)
-                .IsRequired();
-
-
+                .HasMaxLength(30);
         }
     }
 }

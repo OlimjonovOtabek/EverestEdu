@@ -1,14 +1,12 @@
 ﻿using EverestEduApplication.Abstractions;
 using EverestEduApplication.Models;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EverstEdu.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Policy = "AdminActions")]
+    //[Authorize(Policy = "AdminActions")]
     public class TeacherContoller : ControllerBase
     {
         private readonly ITeacherService _teacherService;
