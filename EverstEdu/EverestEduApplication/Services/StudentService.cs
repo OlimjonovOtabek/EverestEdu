@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EverestEduApplication.Services
 {
-    public class StudentService: IStudentService
+    public class StudentService : IStudentService
     {
         private readonly IApplicationDbContext _context;
 

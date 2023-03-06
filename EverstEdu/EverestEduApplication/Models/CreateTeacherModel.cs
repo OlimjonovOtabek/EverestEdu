@@ -9,8 +9,8 @@ namespace EverestEduApplication.Models
         [Required]
         public string? Password { get; set; }
         [Required]
-        public string FullName { get; set; }
-        
+        public string? FullName { get; set; }
+
 
     }
 }

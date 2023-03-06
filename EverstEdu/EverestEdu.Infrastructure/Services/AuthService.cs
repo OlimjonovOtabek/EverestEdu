@@ -16,16 +16,17 @@ namespace EverestEdu.Infrastructure.Services
             _dbContext = dbContext;
             _tokenService = tokenService;
             _hashProvider = hashProvider;
+
         }
 
         public async Task<string> LoginAsync(string username, string password)
         {
             var user = await _dbContext.Users.FirstOrDefaultAsync(x => x.UserName == username);
 
-            if (user is null)
-            {
-                throw new Exception("User not found");
-            }
+            //if (user is null)
+            //{
+            //    throw new Exception("User not found");
+            //}
             if (user.PasswordHash != _hashProvider.GetHash(password))
             {
                 throw new Exception("Password or Login is wrong ");
